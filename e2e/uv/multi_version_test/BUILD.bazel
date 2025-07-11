@@ -1,0 +1,23 @@
+load("@rules_python//python:defs.bzl", "py_test")
+
+py_test(
+    name = "tests.py38",
+    srcs = [
+        "main.py",
+        "test_foo.py",
+    ],
+    main = "main.py",
+    python_version = "3.8",
+    deps = ["@deps//:pytest"],
+)
+
+py_test(
+    name = "tests.py39",
+    srcs = [
+        "main.py",
+        "test_foo.py",
+    ],
+    main = "main.py",
+    python_version = "3.9",
+    deps = ["@deps//:pytest"],
+)

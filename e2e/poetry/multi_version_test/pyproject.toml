@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "multi-version-test"
+version = "0"
+description = ""
+authors = []
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "== 8.*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,9 @@
+[project]
+name = "multi-version-test"
+version = "0"
+requires-python = ">=3.8"
+
+[dependency-groups]
+dev = [
+    "pytest == 8.*",
+]
